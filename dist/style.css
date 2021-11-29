@@ -1,0 +1,168 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #007000;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-middle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.warkout-card {
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 4px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  color: #007000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card-body {
+  color: #737973;
+}
+
+.card-body .rest img {
+  margin-right: 10px;
+}
+
+.card-footer {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.card-footer .card-btn {
+  text-transform: uppercase;
+  color: white;
+  background-color: #6efa6e;
+  border-radius: 5px;
+  outline: none;
+  height: 40px;
+  width: 40%;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.card-footer .card-btn:hover {
+  background-color: #8dd5f1;
+}
+
+@-webkit-keyframes delete {
+  0% {
+    left: 0px;
+  }
+  1% {
+    left: 100px;
+    opacity: 0.6;
+  }
+  100% {
+    left: 300px;
+    opacity: 0;
+  }
+}
+
+@keyframes delete {
+  0% {
+    left: 0px;
+  }
+  1% {
+    left: 100px;
+    opacity: 0.6;
+  }
+  100% {
+    left: 300px;
+    opacity: 0;
+  }
+}
+
+.page-wrapper {
+  height: 100%;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.body-wrapper {
+  max-width: 375px;
+  padding: 40px 10px;
+  margin: 0 auto;
+}
+
+.cards-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.cards-list li {
+  position: relative;
+}
+
+.cards-list li.remove {
+  -webkit-animation-name: delete;
+          animation-name: delete;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+.cards-list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */

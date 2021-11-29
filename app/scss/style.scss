@@ -1,0 +1,37 @@
+@import"variables";
+@import "globals";
+@import "card";
+@import"animation";
+
+.page-wrapper {
+    height: 100%;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.body-wrapper {
+    max-width: 375px;
+    padding: 40px 10px;
+    margin: 0 auto;
+}
+
+.cards-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    li {
+        position: relative;
+        &.remove {
+            animation-name: delete;
+            animation-duration: 0.5s;
+        }
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}

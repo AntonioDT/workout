@@ -1,0 +1,52 @@
+@-webkit-keyframes delete {
+  0% {
+    left: 0px;
+  }
+  1% {
+    left: 100px;
+    opacity: 0.6;
+  }
+  100% {
+    left: 300px;
+    opacity: 0;
+  }
+}
+
+@keyframes delete {
+  0% {
+    left: 0px;
+  }
+  1% {
+    left: 100px;
+    opacity: 0.6;
+  }
+  100% {
+    left: 300px;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes goUp {
+  0% {
+    top: 0px;
+  }
+  1% {
+    top: -100px;
+  }
+  100% {
+    top: -170px;
+  }
+}
+
+@keyframes goUp {
+  0% {
+    top: 0px;
+  }
+  1% {
+    top: -100px;
+  }
+  100% {
+    top: -170px;
+  }
+}
+/*# sourceMappingURL=animation.css.map */
